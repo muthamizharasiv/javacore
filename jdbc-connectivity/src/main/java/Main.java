@@ -14,8 +14,8 @@ public class Main {
 
             DbService service = new DbService(connectivity.getConnection());
 //            int cnt = service.create(
-//                    2,
-//                    "pqr",
+//                    7,
+//                    "klm",
 //                    Date.valueOf(LocalDate.now()),
 //                    true
 //            );
@@ -25,7 +25,9 @@ public class Main {
 
 //            service.find();
 
-            service.findEmployeeByName("pqr");
+//            service.findEmployeeByName("abc");
+
+            service.txnDemo(57, "kol", Date.valueOf(LocalDate.now()), true, 2);
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
