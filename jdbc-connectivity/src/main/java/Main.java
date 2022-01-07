@@ -27,7 +27,10 @@ public class Main {
 
 //            service.findEmployeeByName("abc");
 
-            service.txnDemo(57, "kol", Date.valueOf(LocalDate.now()), true, 2);
+   //         service.txnDemo(57, "kol", Date.valueOf(LocalDate.now()), true, 2);
+     //       service.update();
+            service.delete();
+
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
